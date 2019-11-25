@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm i
+      - run: npm ci
       - run: npm t
 
   publish-npm:
@@ -25,11 +25,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm i
-      - run: npx semantic-release
-        env:
+      - run: npm ci
+      - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
 
   publish-gpr:
     needs: build
@@ -41,7 +41,7 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@lorenzorapetti'
-      - run: npm i
+      - run: npm ci
       - run: npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
