@@ -5,10 +5,6 @@ on:
     branches:
       - master
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,7 +26,10 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npx semantic-release
+      - run: echo NPM_TOKEN && npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-gpr:
     needs: build
