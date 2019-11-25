@@ -1,0 +1,28 @@
+{
+  "name": "@lorenzorapetti/eslint-config",
+  "version": "1.0.0",
+  "description": "My personal ESLint config",
+  "main": "index.js",
+  "repository": "https://github.com/lorenzorapetti/eslint-config-lorenzorapetti",
+  "author": "Lorenzo Rapetti",
+  "license": "MIT",
+  "scripts": {
+    "eslint-check": "eslint --print-config ./index.js | eslint-config-prettier-check"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "prettier": "^1.19.1"
+  }
+}
