@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:react/recommended', 'prettier/react'],
+  extends: ['./jsx-a11y.js', 'prettier/react'],
 
   plugins: ['react', 'react-hooks'],
 

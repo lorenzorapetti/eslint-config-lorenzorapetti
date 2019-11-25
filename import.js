@@ -15,8 +15,8 @@ module.exports = {
   },
 
   rules: {
-    'dynamic-import-chunkname': 'off',
     'import/default': 'error',
+    'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
     'import/exports-last': 'error',
     'import/extensions': 'off',
@@ -36,9 +36,11 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-dynamic-require': 'off',
     'import/no-extraneous-dependencies': 'error',
+    'import/no-internal-modules': 'off',
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
+    'import/no-named-default': 'off',
     'import/no-named-export': 'off',
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',

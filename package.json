@@ -1,13 +1,26 @@
 {
   "name": "@lorenzorapetti/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "My personal ESLint config",
   "main": "index.js",
   "repository": "https://github.com/lorenzorapetti/eslint-config-lorenzorapetti",
   "author": "Lorenzo Rapetti",
   "license": "MIT",
+  "prettier": "@lorenzorapetti/prettier-config",
   "scripts": {
-    "eslint-check": "eslint --print-config ./index.js | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config ./index.js | eslint-config-prettier-check",
+    "lint": "eslint .",
+    "test": "npm-run-all --parallel eslint-check lint find-rules",
+    "find-rules": "npm-run-all --parallel find-rules:*",
+    "find-rules:main": "eslint-find-rules --unused ./index.js",
+    "find-rules:import": "eslint-find-rules --unused ./test/import/index.js",
+    "find-rules:react": "eslint-find-rules --unused ./test/react/index.js",
+    "find-rules:jsx-a11y": "eslint-find-rules --unused ./test/jsx-a11y/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm t"
+    }
   },
   "peerDependencies": {
     "eslint": ">=6"
@@ -22,7 +35,13 @@
     "eslint-plugin-react-hooks": "^2.3.0"
   },
   "devDependencies": {
+    "@lorenzorapetti/prettier-config": "^1.1.0",
     "eslint": "^6.7.1",
-    "prettier": "^1.19.1"
+    "eslint-find-rules": "^3.4.0",
+    "husky": "^3.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "semantic-release": "^15.13.31"
   }
 }
