@@ -18,7 +18,7 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm t
-      - run: npx semantic-release -d
+      - run: npx semantic-release -d -b develop
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
