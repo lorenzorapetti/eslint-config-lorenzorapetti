@@ -30,6 +30,8 @@ module.exports = {
         'no-undef': 'off',
         // handled by @typescript-eslint/no-useless-constructor
         'no-useless-constructor': 'off',
+        // handled by @typescript-eslint/no-throw-literal
+        'no-throw-literal': 'off',
 
         '@typescript-eslint/array-type': ['error', { default: 'array-simple' }], // Let's try this
         '@typescript-eslint/consistent-type-definitions': 'off',
@@ -48,6 +50,7 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': 'off',
         '@typescript-eslint/no-parameter-properties': 'off',
         '@typescript-eslint/no-require-imports': 'error',
+        '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-type-alias': 'off',
         '@typescript-eslint/no-unnecessary-condition': 'off',
         '@typescript-eslint/no-unnecessary-qualifier': 'error',

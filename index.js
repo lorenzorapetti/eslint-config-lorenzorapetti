@@ -217,6 +217,7 @@ module.exports = {
       },
     ],
     radix: 'error',
+    'require-atomic-updates': 'error',
     'require-await': 'error',
     'require-unicode-regexp': 'off',
     'sort-imports': 'off',
