@@ -38,6 +38,7 @@ module.exports = {
     'react/forbid-elements': 'off',
     'react/forbid-foreign-prop-types': 'error',
     'react/forbid-prop-types': 'off',
+    'react/function-component-definition': 'off', // Still deciding if i want to do this...
     'react/jsx-boolean-value': 'off',
     'react/jsx-curly-brace-presence': [
       'error',
@@ -60,6 +61,7 @@ module.exports = {
     'react/jsx-no-comment-textnodes': 'off',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'off',
+    'react/jsx-no-script-url': 'error',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
@@ -70,6 +72,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-access-state-in-setstate': 'error',
+    'react/no-adjacent-inline-elements': 'error',
     'react/no-array-index-key': 'off',
     'react/no-children-prop': 'error',
     'react/no-danger': 'off',

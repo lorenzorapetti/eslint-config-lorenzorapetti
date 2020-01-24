@@ -35,19 +35,24 @@ module.exports = {
 
         '@typescript-eslint/array-type': ['error', { default: 'array-simple' }], // Let's try this
         '@typescript-eslint/consistent-type-definitions': 'off',
+        '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/explicit-member-accessibility': [
           'error',
           { accessibility: 'no-public' },
         ],
+        '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/generic-type-naming': 'off',
         '@typescript-eslint/member-naming': 'off',
         '@typescript-eslint/member-ordering': 'off',
+        '@typescript-eslint/naming-convention': 'off', // Need to think about this
         '@typescript-eslint/no-dynamic-delete': 'error',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-extra-non-null-assertion': 'error',
         '@typescript-eslint/no-extraneous-class': 'off',
         '@typescript-eslint/no-floating-promises': 'error',
+        '@typescript-eslint/no-implied-eval': 'error',
         '@typescript-eslint/no-magic-numbers': 'off',
+        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-parameter-properties': 'off',
         '@typescript-eslint/no-require-imports': 'error',
         '@typescript-eslint/no-throw-literal': 'error',
@@ -55,7 +60,6 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-condition': 'off',
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
-        '@typescript-eslint/no-untyped-public-signature': 'error',
         '@typescript-eslint/no-unused-expressions': 'off',
         '@typescript-eslint/no-unused-vars-experimental': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
