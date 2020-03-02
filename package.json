@@ -20,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && npm t"
+      "pre-commit": "pretty-quick --staged && npm-run-all test"
     }
   },
   "publishConfig": {
