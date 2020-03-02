@@ -1,6 +1,6 @@
 {
   "name": "@lorenzorapetti/eslint-config",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "My personal ESLint config",
   "main": "index.js",
   "repository": "https://github.com/lorenzorapetti/eslint-config-lorenzorapetti",
