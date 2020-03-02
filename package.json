@@ -8,6 +8,7 @@
   "license": "MIT",
   "prettier": "@lorenzorapetti/prettier-config",
   "scripts": {
+    "release": "np --no-publish && yarn publish",
     "eslint-check": "eslint --print-config ./index.js | eslint-config-prettier-check",
     "lint": "eslint .",
     "test": "npm-run-all --parallel eslint-check lint find-rules",
