@@ -34,6 +34,7 @@ module.exports = {
         'no-throw-literal': 'off',
 
         '@typescript-eslint/array-type': ['error', { default: 'array-simple' }], // Let's try this
+        '@typescript-eslint/ban-ts-comment': 'warn',
         '@typescript-eslint/consistent-type-definitions': 'off',
         '@typescript-eslint/default-param-last': 'error',
         '@typescript-eslint/explicit-member-accessibility': [
@@ -45,6 +46,7 @@ module.exports = {
         '@typescript-eslint/member-naming': 'off',
         '@typescript-eslint/member-ordering': 'off',
         '@typescript-eslint/naming-convention': 'off', // Need to think about this
+        '@typescript-eslint/no-dupe-class-members': 'error',
         '@typescript-eslint/no-dynamic-delete': 'error',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-extra-non-null-assertion': 'error',
@@ -57,12 +59,14 @@ module.exports = {
         '@typescript-eslint/no-require-imports': 'error',
         '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-type-alias': 'off',
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'off',
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         '@typescript-eslint/no-unused-expressions': 'off',
         '@typescript-eslint/no-unused-vars-experimental': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/prefer-for-of': 'warn',
         '@typescript-eslint/prefer-function-type': 'error',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
@@ -74,6 +78,7 @@ module.exports = {
         '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
         '@typescript-eslint/return-await': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'error',
+        '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/typedef': 'off',
         '@typescript-eslint/unified-signatures': 'error',
       },
